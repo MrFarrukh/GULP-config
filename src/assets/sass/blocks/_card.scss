@@ -1,0 +1,177 @@
+.card {
+    &__block {
+        margin-top: 617px;
+        margin-bottom: 50px;
+    }
+
+    &__txt {
+        h1 {
+            text-align: center;
+            font-family: 'mr-r';
+            font-style: normal;
+            font-size: 24px;
+            line-height: 30px;
+            color: #F2994A;
+        }
+    }
+}
+.card__click{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.outerDivFull {
+    margin: 50px;
+}
+
+.switchToggle input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.switchToggle label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 468px;
+    max-width: 494px;
+    height: 44px;
+    background: #febb7fd9;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+
+.switchToggle label:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    width: 300px;
+    height: 50px;
+    background: #F2994A;
+    border-radius: 90px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #F2994A;
+}
+
+.switchToggle input:checked+label,
+.switchToggle input:checked+input+label {
+    background: #febb7fd9;
+}
+
+.switchToggle input+label:before,
+.switchToggle input+input+label:before {
+    content: 'Специальные предложения';
+    position: absolute;
+    top: 14px;
+    left: 41px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+    font-family: 'mr-r';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    z-index: 1;
+}
+
+.switchToggle input:checked+label:before,
+.switchToggle input:checked+input+label:before {
+    content: 'Новые проекты';
+    position: absolute;
+    top: 14px;
+    left: 260px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+    font-family: 'mr-r';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.switchToggle input:checked+label:after,
+.switchToggle input:checked+input+label:after {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+}
+
+.switchToggle label:active:after {
+    width: 60px;
+}
+
+.toggle-switchArea {
+    margin: 10px 0 10px 0;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px 3px #f2994a;
+}
+.card:hover img{
+    transform: scaleY(1.1);
+    transition: all ease 0.5s;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 258px;
+    background-color: #F2994A;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 0 12px 0px #f2994a;
+    transition: all ease 0.5s;
+    p{
+        width: 218px;
+        text-align: center;
+        font-family: 'mr-r';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        margin: 20px;
+    }
+    h3{
+        font-family: 'mr-r';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0px 108px 20px 108px;
+    }
+    button{
+        padding: 10px 80px;
+        background-color: unset;
+        margin: 0px 21px 25px 19px;
+        border: 1px solid #fff;
+        font-family: 'mr-r';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:focus{
+        outline: 0;
+    }
+    img{
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        transition: all ease 0.5s;
+    }
+}

@@ -1,0 +1,36 @@
+
+
+.comment{
+    &__title{
+        display: flex;
+    }
+    &__img{
+        img{
+            margin-top: 150px;
+            margin-bottom: 150px;
+            margin-right: 117px;
+            margin-left: 300px;
+        }
+    }
+    &__text{
+        h3{
+            margin-top: 223px;
+            font-family: 'mr-r';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            color: #F2994A;
+        }
+        p{
+            font-family: 'mr-l';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            width: 679px;
+            color: #9F9F9F;
+            margin-top: 12px;
+        }
+    }
+}
